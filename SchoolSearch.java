@@ -10,9 +10,9 @@ public class SchoolSearch{
    }
 
    public static void populateStudents(){
-
+      
    }
-   
+
    public static void startUp(){
       String opitions = "Here are your opitions:\n S[tudent]: <lastname> [B[us]]\n T[eacher]: <lastname>\n" + 
                         "B[us]: <number>\n G[rade]: <number> [[H[igh]] | [L[ow]]\n A[verage]: <number> " + 
@@ -42,6 +42,6 @@ public class SchoolSearch{
    }
 
    public static void studentSearch(String argument, boolean bus){
-      while()
+      System.out.println("In Progress");
    }
 }
