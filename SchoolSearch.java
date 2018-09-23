@@ -34,6 +34,15 @@ public class SchoolSearch{
                }
                studentSearch(argument.substring(0, arugment.length()-1), bus);
                break;
+
+            case "G":
+               String arugment = strSplit[1];
+               boolean high = false;
+               boolean low = false;
+               if(argument.getCharAt(argument.length()-1) == 'H') high = true;
+               else if(arugment.getCharAt(argument.length() -1) == 'L') low = true;
+               gradeSearch(argument, high, low);
+               break;
          }
          command = scan.next();
       }
@@ -42,6 +51,43 @@ public class SchoolSearch{
    }
 
    public static void studentSearch(String argument, boolean bus){
-      System.out.println("In Progress");
+      for(StudentObj temp : students){
+         if(temp.StLastName.equals(arugment) && bus == false){
+            System.out.println(temp.StLastName + " " + temp.StFirstName + " " + temp.Grade + " " +
+                                 temp.Classroom + " " + temp.TLastName + " " + temp.TFirstName);
+         }
+         else if(temp.StLastName.equals(arugment) && bus == true){
+            System.out.println(temp.StLastName + " " + temp.StFirstName + " " + temp.Grade + " " +
+                                 temp.Classroom + " " + temp.TLastName + " " + temp.TFirstName);
+         }
+
+      }
+   }
+
+   public static void gradeSearch(String argument, boolean high, boolean low){
+      int grade = Integer.parseInt(argument);
+      if(high){
+         
+         long gpa = Integer.MIN_VALUE;
+
+         for(StudentObj student : students){
+            if(student.Grade == grade && gpa < student.GPA){
+               gpa = student.GPA
+            }
+         }
+      }
+      else if(low){
+
+      }
+      
+      else{
+         for(StudentObj student : students){
+            if(student.Grade == grade){
+               System.out.println(student.StLastName + " " + student.StFirstName);
+            }
+         }
+      }
+      
+
    }
 }
