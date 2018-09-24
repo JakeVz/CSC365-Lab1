@@ -20,10 +20,15 @@ public class studentObj{
       GPA = Double.parseDouble(data[5]);
       TLastName = data[6];
       TFirstName = data[7];
-
+/*
       for (int i = 0; i < 8; i++){
          System.out.println(data[i]);
       }
+*/
+   }
+
+   public studentObj(){
+      StLastName = null;
    }
 /*
    public static void main(String args[]){
