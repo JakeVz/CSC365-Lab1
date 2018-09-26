@@ -33,3 +33,51 @@ GARTH,JOHN
 
 //TC-9
 Output: Please enter a valid number
+
+//TC-10
+Output:
+
+//TC-11
+Output:
+COOKUS, XUAN, 3, 107
+ELHADDAD, SHANTE, 3, 107
+IMMERMAN, DEVIN, 4, 105
+OBREIN, STAN, 6, 111
+CORONADO, DIMPLE, 6, 102
+SARAO, DIEDRA, 2, 108
+EARLY, TORY, 3, 107
+KEMERER, ROSETTA, 6, 102
+
+//TC-12
+Output: Enter a valid integer
+
+//TC-13
+Output: 
+
+//TC-14
+Output: GARTH,JOHN,3.14,FALKER,ADOLPH,0
+
+//TC-15
+Output: CIGANEK,MANIE,2.79,FAFARD,ROCIO,53
+
+//TC-16
+Output: Average GPA for grade 3 is: 3.048888888888889
+
+//TC-19
+Output:
+                  Grade | # Of Students
+                  0: 0
+                  1: 2
+                  2: 13
+                  3: 9
+                  4: 15
+                  5: 0
+                  6: 21
+//TC-20
+Output: Error reading in students
+
+//TC-21
+Output: Not a valid opition
+
+//TC-22
+Output: Good Bye <program ends>

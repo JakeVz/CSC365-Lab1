@@ -59,17 +59,116 @@ Teacher: FAFARD
 T: FAKER
 
 // TC-8
-// Tests Requirements R3, R7, valid integer
+// Tests Requirements R3, R7
+// Short form command name/ command name, valid integer
 // expected output:  SAELEE,DANILO
                      GARTH,JOHN
 
 G: 1
 
 // TC-9
-// Tests Requirements R3, R7, E1, invalid integer
+// Tests Requirements R3, R7, E1
+// Short form command name/ command name, non-integer value
 // expected output:  Please enter a valid number
 
 G: abc
 
+// TC-9
+// Tests Requirements R3, R7, E1
+// Short form command name/ command name, invalid integer
+// expected output:
+
+G: 100
+
+// TC-11
+// Tests Requirements R3, R8
+// Short form command name/ command name,valid bus number
+// expected output: 
+                  COOKUS, XUAN, 3, 107
+                  ELHADDAD, SHANTE, 3, 107
+                  IMMERMAN, DEVIN, 4, 105
+                  OBREIN, STAN, 6, 111
+                  CORONADO, DIMPLE, 6, 102
+                  SARAO, DIEDRA, 2, 108
+                  EARLY, TORY, 3, 107
+                  KEMERER, ROSETTA, 6, 102
+
+Bus: 52
+
+// TC-12
+// Tests Requirements R3, R8, E1 
+// Short form command name/ command name,non-valid bus number
+// expected output: Enter a valid integer
+
+Bus: ABC
+
+// TC-13
+// Tests Requirements R3, R8 
+// Short form command name/ command name,non-existant bus
+// expected output:
+
+Bus: 100
+
+// TC-14
+// Tests Requirements R3, R9 
+// Short form command name/ command name, valid grade with High command
+// expected output: GARTH,JOHN,3.14,FALKER,ADOLPH,0
+
+Grade: 1 High
+
+// TC-15
+// Tests Requirements R3, R9 
+// Short form command name/ command name, valid grade with low command
+// expected output: CIGANEK,MANIE,2.79,FAFARD,ROCIO,53
+
+Grade: 3 Low
+
+// TC-16
+// Tests Requirements R3, R10 
+// Short form command name/ command name, existant grade
+// expected output: Average GPA for grade 3 is: 3.048888888888889
+
+A: 3
+
+//TODO: Look at this test case perhaps
+// TC-17
+// Tests Requirements R3, R10 
+// Short form command name/ command name, non-existant grade
+// expected output:
+
+A: 3
+
+// TC-19
+// Tests Requirements R3, R11 
+// Short form command name/ command name
+// expected output:
+                  Grade | # Of Students
+                  0: 0
+                  1: 2
+                  2: 13
+                  3: 9
+                  4: 15
+                  5: 0
+                  6: 21
+Info
+
+// TC-20
+// Tests Requirements R3, E1
+// Running program without students.txt file 
+// expected output: Error reading in students
+
+// TC-21
+// Tests Requirements R3, E1
+// Entering invalid command short form
+// expected output: Not a valid opition
+
+Z: <some argument>
+
+// TC-22
+// Tests Requirements R3, R12
+// Short form command name/ command name
+// expected output: Good Bye <program ends>
+
+Quit
 
 

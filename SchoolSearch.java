@@ -200,12 +200,18 @@ public class SchoolSearch extends studentObj{
 
    public static void bus(String bus){
       System.out.println("\nBus Search:");
-      int busNum = Integer.parseInt(bus);
+      
+      try{
+         int busNum = Integer.parseInt(bus);
 
-      for(studentObj temp : students){
-         if (temp.Bus == busNum){
-            System.out.println(temp.StLastName + ", " + temp.StFirstName + ", " + temp.Grade + ", " + temp.Classroom);
+         for(studentObj temp : students){
+            if (temp.Bus == busNum){
+               System.out.println(temp.StLastName + ", " + temp.StFirstName + ", " + temp.Grade + ", " + temp.Classroom);
+            }
          }
+      }
+      catch(Exception ex){
+         System.out.println("Enter a valid integer");
       }
    }
 
