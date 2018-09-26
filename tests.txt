@@ -136,7 +136,7 @@ A: 3
 // Short form command name/ command name, non-existant grade
 // expected output:
 
-A: 3
+A: 9
 
 // TC-19
 // Tests Requirements R3, R11 

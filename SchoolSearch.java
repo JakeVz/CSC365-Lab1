@@ -100,12 +100,12 @@ public class SchoolSearch extends studentObj{
                String teacher = argument.replaceAll(" ", "");
                teacher(teacher);
                break;
-            
+
             case 'q':
             case 'Q':
                System.out.println("Good Bye");
                return;
-            
+
             default:
                System.out.println("Not a valid opition");
                break;
@@ -118,10 +118,9 @@ public class SchoolSearch extends studentObj{
    }
 
    public static void studentSearch(String argument, boolean bus){
-      System.out.println("\nStudent Search:");
-      
+      if (!bus) System.out.println("\nStudent Search:");
+      else System.out.println("\nStudent Search With Bus:");
       for(studentObj temp : students){
-         
          if(temp.StLastName.equalsIgnoreCase(argument) && !bus){
             System.out.println(temp.StLastName + "," + temp.StFirstName + "," + temp.Grade + "," +
                                  temp.Classroom + "," + temp.TLastName + "," + temp.TFirstName);
@@ -135,7 +134,6 @@ public class SchoolSearch extends studentObj{
 
    public static void gradeSearch(String argument, boolean high, boolean low){
       System.out.println("\nGrade Search:");
-      
       try{
          int grade = Integer.parseInt(argument);
          studentObj temp = new studentObj();
@@ -172,7 +170,6 @@ public class SchoolSearch extends studentObj{
       catch(Exception ex){
          System.out.println("Please enter a valid number");
       }
-      
    }
 
    public static void info(){
@@ -190,7 +187,6 @@ public class SchoolSearch extends studentObj{
 
    public static void teacher(String teacher){
       System.out.println("\nTeacher Search:");
-      
       for(studentObj temp : students){
          if (temp.TLastName.equalsIgnoreCase(teacher)){
             System.out.println(temp.StLastName + ", " + temp.StFirstName);
@@ -200,7 +196,6 @@ public class SchoolSearch extends studentObj{
 
    public static void bus(String bus){
       System.out.println("\nBus Search:");
-      
       try{
          int busNum = Integer.parseInt(bus);
 
@@ -226,7 +221,7 @@ public class SchoolSearch extends studentObj{
             numStudents++;
          }
       }
-      System.out.println("\nAverage GPA for grade "+ grade + " is: " + (double)GPATot/numStudents);
+      if (numStudents != 0) System.out.println("\nAverage GPA for grade "+ grade + " is: " + (double)GPATot/numStudents);
    }
 
 }
