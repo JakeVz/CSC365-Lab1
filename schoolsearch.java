@@ -211,7 +211,8 @@ public class schoolsearch extends studentObj{
    }
 
    public static void average(String grade){
-      int gradeNum = Integer.parseInt(grade);
+      try{
+         int gradeNum = Integer.parseInt(grade);
       double GPATot = 0.0;
       int numStudents = 0;
 
@@ -222,6 +223,11 @@ public class schoolsearch extends studentObj{
          }
       }
       if (numStudents != 0) System.out.println("\nAverage GPA for grade "+ grade + " is: " + (double)GPATot/numStudents);
+      }
+      catch(Exception ex){
+         System.out.println("Enter a valid number");
+      }
+      
    }
 
 }

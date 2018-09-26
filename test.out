@@ -80,4 +80,7 @@ Output: Error reading in students
 Output: Not a valid opition
 
 //TC-22
-Output: Good Bye <program ends>
+Output: Good Bye <program ends
+
+//TC-23
+Output: Enter a valid number

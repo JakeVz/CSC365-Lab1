@@ -130,7 +130,6 @@ Grade: 3 Low
 
 A: 3
 
-//TODO: Look at this test case perhaps
 // TC-17
 // Tests Requirements R3, R10 
 // Short form command name/ command name, non-existant grade
@@ -170,5 +169,12 @@ Z: <some argument>
 // expected output: Good Bye <program ends>
 
 Quit
+
+// TC-23
+// Tests Requirements R3, R10 
+// Short form command name/ command name, non-existant grade
+// expected output: Enter a valid number
+
+A: abc
 
 
