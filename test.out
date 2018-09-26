@@ -1,0 +1,35 @@
+// TC-1
+Output: HAVIR,BOBBIE,2,108,2.88.HAMER,GAVIN
+
+// TC-2
+Output: 
+
+// TC-3
+Output: 
+
+// TC-4
+Output: COOKUS,XUAN,52
+
+// TC-5
+Output: 
+
+// TC-6
+Output: 
+COOKUS, XUAN
+ELHADDAD, SHANTE
+SWEDLUND, SHARRI
+CIGANEK, MANIE
+COVINGTON, TOMAS
+EARLY, TORY
+LINHART, LELA
+
+// TC-7
+Output: 
+
+//TC-8
+Output:
+SAELEE,DANILO
+GARTH,JOHN
+
+//TC-9
+Output: Please enter a valid number

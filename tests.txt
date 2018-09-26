@@ -1,0 +1,75 @@
+// CSC 365. Fall 2018
+// Abhinav Singh, Jake Veezy
+// Lab 1-1 Test Suite
+
+// TC-1
+// Tests Requirements R3, R4
+// Short form command name/ command name, existing student
+// expected output: HAVIR,BOBBIE,2,108,2.88.HAMER,GAVIN
+
+S:HAVIR
+
+// TC-2
+// Tests Requirements R3, R4
+// Short form command name/ command name, empty student
+// expected output: <empty-line>
+
+S:
+
+// TC-3
+// Tests Requirements R3, R4
+// Short form command name/ command name, fake student
+// expected output: <empty-line>
+
+S: FAKER
+
+// TC-4
+// Tests Requirements R3, R5
+// Short form command name/ command name, existing student, bus opition
+// expected output: COOKUS,XUAN,52
+
+Student: COOKUS Bus
+
+// TC-5
+// Tests Requirements R3, R5
+// Short form command name/ command name, non-existing student, bus
+// expected output: <empty-line>
+
+Student: B 
+
+// TC-6
+// Tests Requirements R3, R6
+// Short form command name/ command name, existing teacher
+// expected output: 
+                  COOKUS, XUAN
+                  ELHADDAD, SHANTE
+                  SWEDLUND, SHARRI
+                  CIGANEK, MANIE
+                  COVINGTON, TOMAS
+                  EARLY, TORY
+                  LINHART, LELA
+
+Teacher: FAFARD
+
+// TC-7
+// Tests Requirements R3, R6
+// Short form command name/ command name, non-existing teacher
+// expected output: <empty-line>
+
+T: FAKER
+
+// TC-8
+// Tests Requirements R3, R7, valid integer
+// expected output:  SAELEE,DANILO
+                     GARTH,JOHN
+
+G: 1
+
+// TC-9
+// Tests Requirements R3, R7, E1, invalid integer
+// expected output:  Please enter a valid number
+
+G: abc
+
+
+
